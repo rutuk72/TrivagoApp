@@ -66,11 +66,17 @@ public class BookHotelTest {
 	        Thread.sleep(3000);
 	        
 
-//	        String visibleText = "Grand Hyatt Goa";
-//		       
-//		        driver.findElementByAndroidUIAutomator
-//	        ("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"" + visibleText + "\").instance(0))").click();
-//		
+        String visibleText = "Ginger";
+	       
+	        driver.findElementByAndroidUIAutomator
+        ("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionStartsWith(\"" + visibleText + "\").instance(0))").click();
+	
+		        
+		        
+		        
+		        
+		        
+		        
 	        TouchAction swipe = new TouchAction(driver);
 	                  swipe.press(PointOption.point(486,1527)).moveTo(PointOption.point(501,687)).release().perform();
 	                  swipe.press(PointOption.point(486,1527)).moveTo(PointOption.point(501,687)).release().perform();
